@@ -21,4 +21,15 @@ router.get(
         productController.getProductById
         );
 
+router.put(
+    '/:id', 
+    joiSchemaValidation.validateBody(productSchema.updateProductSchema), 
+    productController.updateProduct
+    );
+
+router.delete(
+    '/:id', 
+    productController.deleteProduct
+    );
+
 module.exports = router;

@@ -14,5 +14,9 @@ module.exports = {
     },
     databaseMessage:{
         INVALID_ID: 'Given id is invalid, please check id'
+    },
+    userMessage:{
+        SIGNUP_SUCCESS: 'Signup Success',
+        DUPLICATE_EMAIL: 'Id already exists with given email'
     }
 }
