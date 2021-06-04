@@ -13,6 +13,7 @@ app.use(express.urlencoded({extended: true}));
 
 
 app.use('/api/v1/product', require('./routes/productRoutes'));
+app.use('/api/v1/users', require('./routes/userRoutes'));
 
 
 const PORT = process.env.PORT || 3000;
